@@ -621,10 +621,12 @@ body{
   }
 
   .header{
+    width: 300px;
     flex-direction: column;
   }
 
   .header-box{
+    width: 300px;
     flex-direction: column;
   }
 
@@ -739,6 +741,7 @@ body{
 
   .footer-header{
     flex-direction: column;
+    width: 300px;
   }
 
   .footer-icons{
