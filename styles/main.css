@@ -81,7 +81,7 @@ body{
 .hero-backgraund{
   padding-top: 129px;
   background-color: #014E56;
-  background-position: 0px 110px;
+  background-position: left 110px;
   background-repeat: no-repeat;
   background-image: url("../img/disk2.png");
 }
