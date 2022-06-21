@@ -99,20 +99,27 @@ body{
 .hero-backgraund{
   padding-top: 129px;
   background-color: #014E56;
-  background-size: 150px 200px;
+  background-size: 100px 200px;
   background-repeat: no-repeat;
-  background-position: calc(50% - 680px) 110px;
+  background-position: calc(50% - 660px) 110px;
   background-image: url("../img/disk2.png");
 }
 
 .hero{
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   padding-bottom: 240px;
   background-position: bottom right;
   background-repeat: no-repeat;
   background-image: url("../img/disk.png");
+}
+
+.hero-b{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 120px;
 }
 
 .hero-heading{
@@ -496,8 +503,71 @@ body{
   }
 }
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:950px){
+
+
   .hero{
-    background-position: bottom center;
+    flex-direction: column;
+    padding-bottom: 150px;
   }
+
+  .hero-b{
+    flex-direction: column;
+    padding-bottom: 150px;
+  }
+
+  .hero-heading{
+    text-align: center;
+  }
+
+  .hero-text{
+    text-align: center;
+  }
+
+  .hero-text::before{
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width:560px){
+  
+  .hero-heading{
+    width: 320px;
+    font-size: 64px;
+    line-height: 56px;
+  }
+
+  .hero-text{
+    font-size:15px;
+  }
+
+}
+
+@media only screen and (max-width:430px){
+
+  .hero-backgraund {
+    padding-top: 70px;
+  }
+
+  .hero{
+    padding-bottom: 110px;
+    background-size: 280px;
+  }
+
+  .hero-b{
+    padding-bottom: 108px;
+  }
+  
+  .hero-heading{
+    width: 222px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .hero-text{
+    width: 310px;
+  }
+
+
 }
