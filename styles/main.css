@@ -105,11 +105,6 @@ body{
   background-image: url("../img/disk2.png");
 }
 
-.hero-backgraund-b{
-  padding-top: 129px;
-  background-color: #034b53;
-}
-
 .hero{
   display: flex;
   justify-content: space-between;
