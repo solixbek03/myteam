@@ -197,6 +197,7 @@ body{
 .distribute-item {
   margin-bottom: 32px;
   display: flex;
+  margin-right: 0;
 }
 
 .distribute-item::before {
@@ -527,6 +528,24 @@ body{
   .hero-text::before{
     display: none;
   }
+
+
+  .distribute-inner{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .distribute-heading::before{
+    display: none;
+  }
+
+  .distribute-list {
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 
@@ -540,6 +559,30 @@ body{
 
   .hero-text{
     font-size:15px;
+  }
+
+  .distribute-list {
+    align-items: center;
+    width: 300px;
+  }
+
+  .distribute-item{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+  }
+
+  .distribute-heading{
+    font-size: 32px;
+    line-height: 32px;
+    width: 300px;
+  }
+
+  .distribute-item-text{
+    font-size: 15px;
+    line-height: 25px;
+    width: 300px;
   }
 
 }
