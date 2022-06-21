@@ -105,6 +105,11 @@ body{
   background-image: url("../img/disk2.png");
 }
 
+.hero-backgraund-b{
+  padding-top: 129px;
+  background-color: #014E56;
+}
+
 .hero{
   display: flex;
   justify-content: space-between;
@@ -472,6 +477,12 @@ body{
   background-image: url("../img/clients-bg.png");
 }
 
+.clients-backgraound-b{
+  background-color:#012f34;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
 .clients-heading{
   margin: 0;
   font-size: 48px;
@@ -572,6 +583,12 @@ body{
   .subscribe-text{
     font-size: 32px;
     line-height: 32px;
+  }
+
+  .clients-list{
+    margin-top: 64px;
+    flex-direction: column;
+    line-height: 75px;
   }
 
 }
@@ -743,6 +760,10 @@ body{
 @media only screen and (max-width:430px){
 
   .hero-backgraund {
+    padding-top: 70px;
+  }
+
+  .hero-backgraund-b{
     padding-top: 70px;
   }
 
