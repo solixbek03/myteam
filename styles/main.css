@@ -248,6 +248,7 @@ body{
 
 .data-backgraound{
   padding-top: 140px;
+  padding-bottom: 140px;
   background-color: #004047;
   background-repeat: no-repeat;
   background-position: top left, bottom right;
@@ -256,9 +257,10 @@ body{
                     url("../img/disk4.png");
 }
 
-/* .data{
-
-} */
+.data{
+  display: flex;
+  flex-direction: column;
+}
 
 .data-heading{
   margin: 0;
@@ -279,6 +281,12 @@ body{
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.data-list-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .data-list-text{
@@ -309,7 +317,6 @@ body{
 .data-list-img{
   width: 62px;
   height: 62px;
-  margin-left: 160px;
 }
 
 .subscribe-backgraound{
@@ -483,18 +490,24 @@ body{
   width: 95px;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:1160px){
 
-  .header-nav{
-    display: none;
+  .data{
+    align-items: center;
   }
 
-  .header-button{
-    display: none;
+  .data-heading{
+    font-size: 32px;
+    line-height: 32px;
+    width: 573px;
   }
 
-  .hamburger{
-    display: inline-block;
+  .data-list{
+    flex-direction: column;
+  }
+
+  .data-list-text{
+    width: 573px;
   }
 }
 
@@ -546,6 +559,36 @@ body{
     display: flex;
     flex-direction: column;
   }
+
+}
+
+@media only screen and (max-width:610px){
+
+  .header-nav{
+    display: none;
+  }
+
+  .header-button{
+    display: none;
+  }
+
+  .hamburger{
+    display: inline-block;
+  }
+
+  .data-heading{
+    width: 300px;
+  }
+
+  .data-list-item{
+    width: 300px;
+  }
+
+  .data-list-text{
+    width: 300px;
+    margin-right: 0;
+  }
+
 }
 
 
