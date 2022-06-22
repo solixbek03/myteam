@@ -30,6 +30,16 @@ body{
   align-items: center;
 }
 
+.header-logo{
+  width: 160px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+.header-logo:hover{
+  transform: scale(1.2);
+}
+
 .header-box{
   display: flex;
   justify-content: space-between;
@@ -99,10 +109,10 @@ body{
 .hero-backgraund{
   padding-top: 129px;
   background-color: #014E56;
-  background-size: 100px 200px;
+  background-size: 200px 200px;
   background-repeat: no-repeat;
-  background-position: calc(50% - 660px) 110px;
-  background-image: url("../img/disk2.png");
+  background-position: calc(50% - 760px) 110px;
+  background-image: url("../img/disk9.png");
 }
 
 .hero{
@@ -251,7 +261,7 @@ body{
   padding-bottom: 140px;
   background-color: #004047;
   background-repeat: no-repeat;
-  background-position: top left, bottom right;
+  background-position: calc(50% - 690px) 0px, calc(50% + 690px) 619px;
   background-size: 150px, 200px;
   background-image: url("../img/disk3.png"),
                     url("../img/disk4.png");
@@ -322,7 +332,7 @@ body{
 .subscribe-backgraound{
   background-color: #F67E7E;
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: calc(50% - 690px) 81px;
   background-size: 200px;
   background-image: url("../img/disk5.png");
 }
@@ -631,6 +641,14 @@ body{
   .data-list-text{
     width: 573px;
   }
+
+  .data-backgraound {
+    background-position: 0px 0px, 959px 1123px;
+  }
+
+  .subscribe-backgraound{
+    background-position: -40px 81px;
+  }
 }
 
 @media only screen and (max-width:1000px){
@@ -641,6 +659,7 @@ body{
   .contact{
     flex-direction: column;
   }
+
 }
 
 @media only screen and (max-width:950px){
@@ -749,6 +768,10 @@ body{
     font-size: 15px;
     line-height: 25px;
   }
+
+  .subscribe-backgraound{
+    background-position: -40px 125px;
+  }
 }
 
 @media only screen and (max-width:610px){
@@ -829,6 +852,17 @@ body{
     width: 300px;
   }
 
+  .distribute-item:nth-child(1)::before {
+    width: 90px;
+  }
+
+  .distribute-item:nth-child(2)::before {
+    width: 90px;
+  }
+
+  .distribute-item:nth-child(3)::before {
+    width: 90px;
+  }
 }
 
 @media only screen and (max-width:500px){
@@ -872,7 +906,11 @@ body{
 
   .footer-links-text {
     margin: 0;
-}
+  }
+
+  .subscribe-backgraound{
+    background-position: -40px 145px;
+  }
 }
 
 @media only screen and (max-width:440px){
