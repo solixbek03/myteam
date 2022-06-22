@@ -628,6 +628,10 @@ body{
   .hero{
     background-position: bottom center;
   }
+
+  .contact{
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width:950px){
@@ -765,6 +769,18 @@ body{
     margin-right: 0;
   }
 
+  .contact-form{
+    align-items: center;
+  }
+
+  .contact-form-input{
+    width: 300px;
+  }
+
+  .contact-form-massage{
+    width: 300px;
+  }
+
 }
 
 
@@ -850,7 +866,7 @@ body{
 }
 }
 
-@media only screen and (max-width:430px){
+@media only screen and (max-width:440px){
 
   .hero-backgraund {
     padding-top: 70px;
@@ -876,6 +892,29 @@ body{
   }
 
   .hero-text{
-    width: 310px;
+    width: 300px;
+  }
+
+  .contact-list-items{
+    width: 300px;
+  }
+
+  .contact-list-items::before{
+    
+  }
+
+  .contact-list-items:nth-child(1)::before {
+    width: 0px;
+    padding-left: 95px;
+  }
+  
+  .contact-list-items:nth-child(2)::before {
+    width: 0px;
+    padding-left: 95px;
+  }
+  
+  .contact-list-items:nth-child(3)::before {
+    width: 0px;
+    padding-left: 95px;
   }
 }
