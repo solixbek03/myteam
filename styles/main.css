@@ -420,8 +420,8 @@ body{
   padding-top:154px;
   padding-bottom: 154px;
   background-repeat: no-repeat;
-  background-position: top left, bottom right;
-  background-size: 120px, 170px;
+  background-position: calc(50% - 760px) 0px, calc(50% + 700px) 816px;
+  background-size: 200px, 170px;
   background-image: url("../img/disk7.png"),
                     url("../img/disk6.png");
 }
@@ -456,8 +456,24 @@ body{
 }
 
 .info-list-item-img{
+  z-index: 1;
+}
+
+.onfo-list-item-image-box:hover{
+  transform: rotate(45deg);
+  background-color: #79C8C7;
+}
+
+.onfo-list-item-image-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
   position: absolute;
   bottom: -30px;
+  background-color: #F67E7E;
+  border-radius: 55px;
   z-index: 1;
 }
 
@@ -486,7 +502,7 @@ body{
   padding-top: 140px;
   padding-bottom: 140px;
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: calc(50% - 690px) 0px;
   background-size: 150px;
   background-image: url("../img/clients-bg.png");
 }
