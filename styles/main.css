@@ -741,6 +741,15 @@ body{
     justify-content: space-between;
     align-items: center;
   }
+
+  .info-list {
+    flex-direction: column;
+}
+
+  .info-backgraound{
+    background-size: 130px,170px;
+    background-position:left top, right bottom;
+  }
 }
 
 @media only screen and (max-width:650px){
