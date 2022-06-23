@@ -449,10 +449,66 @@ body{
 .info-list-item-box{
   position: relative;
   margin-bottom: 50px;
+  width: 300px;
+  height: 281px;
+  display: flex;
+  overflow: hidden;
+}
+
+.info-list-item-box div{
+  position: absolute;
+}
+
+.info-list-item-box:active .info-list-item-hover{
+  right: 0;
+}
+
+.info-list-item-box:active .info-list-item{
+  display: none;
+}
+
+.info-list-item-hover{
+  width: 300px;
+  height: 281px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: end;
+  padding-top: 20px;
+  padding-bottom: 30px ;
+  z-index: 10;
+  right: 600px;
+}
+
+.info-text{
+  margin: 0;
+  margin-top: 5px;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.info-text-b{
+  margin: 0;
+  margin-top: 5px;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.info-hover-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #002529;
+  padding: 45px;
+}
+
+.info-image{
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
 }
 
 .info-list-item-img{
@@ -460,12 +516,7 @@ body{
 }
 
 .onfo-list-item-image-box:hover{
-  transform: scale(1.1);
-}
-
-.onfo-list-item-image-box:active{
-  transform: rotate(45deg);
-  background-color: #79C8C7;
+  transform: scale(0.9);
 }
 
 .onfo-list-item-image-box{
@@ -475,26 +526,37 @@ body{
   width: 56px;
   height: 56px;
   position: absolute;
-  bottom: -30px;
+  bottom: 0px;
   background-color: #F67E7E;
   border-radius: 55px;
   z-index: 1;
 }
 
+.info-list-item-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #002529;
+  padding: 45px;
+}
+
 .info-list-item{
-  width: 350px;
+  width: 300px;
+  height: 281px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 30px ;
-  background-color:#002529;
 }
 
 .info-list-item-title{
   margin: 0;
   color: #79C8C7;
+  width: 108px;
+  text-align: center;
 }
 
 .info-list-item-text{
@@ -1004,5 +1066,13 @@ body{
 
   .info-list-item{
     width: 290px;
+  }
+
+  .info-text{
+    width: 200px;
+  }
+
+  .info-text-b{
+    width: 200px;
   }
 }
