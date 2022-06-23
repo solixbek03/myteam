@@ -460,6 +460,10 @@ body{
 }
 
 .onfo-list-item-image-box:hover{
+  transform: scale(1.1);
+}
+
+.onfo-list-item-image-box:active{
   transform: rotate(45deg);
   background-color: #79C8C7;
 }
