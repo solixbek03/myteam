@@ -516,7 +516,7 @@ body{
 }
 
 .onfo-list-item-image-box:hover{
-  transform: scale(0.9);
+  background-color: #79C8C7;
 }
 
 .onfo-list-item-image-box{
